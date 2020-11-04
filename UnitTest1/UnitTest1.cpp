@@ -12,9 +12,11 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestMethod1)
 		{
-			int t;
-			t = g(0, 0);
-			Assert::AreEqual(t, 1);
+			double t;
+			const double x = 0;
+			const double y = 0;
+			t = g(x, y);
+			Assert::AreEqual(t, 1.);
 		}
 	};
 }
